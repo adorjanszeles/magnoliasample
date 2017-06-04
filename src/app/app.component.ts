@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  public doAlert() {
+    alert(this.title);
+  }
+
+  public onKey(event: any) { // without type info
+    this.title = event.target.value;
+  }
 }
